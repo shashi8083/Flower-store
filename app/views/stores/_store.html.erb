@@ -1,0 +1,30 @@
+<div id="<%= dom_id store %>">
+<% if store.flower_image.attached?%>
+<%= image_tag store.flower_image,height: "100", width: "100"%>
+<% end%>
+  <p>
+    <strong>Name:</strong>
+    <%= store.name %>
+  </p>
+
+  <p>
+    <strong>Flower type:</strong>
+    <%= store.flower_type %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= store.description %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= store.price %>
+  </p>
+
+  <p>
+    <strong>Color:</strong>
+    <%= store.color %>
+  </p>
+
+</div>
